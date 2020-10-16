@@ -3,7 +3,9 @@ import OrpohanagesController from './controllers/OrphanagesControllers'
 
 const routes = Router();
 
+//index(listagem) / show / create / delete
 
+routes.get('/orphanages', OrpohanagesController.index);
 routes.post('/orphanages', OrpohanagesController.create);
 
 
